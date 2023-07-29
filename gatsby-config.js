@@ -9,8 +9,8 @@ module.exports = {
   plugins: [{
     resolve: 'gatsby-source-contentful',
     options: {
-      "accessToken": "6HIscN0V0vNE-ywWbDIALZvbkaP-vRvhiM2zAEqX8RQ",
-      "spaceId": ""
+      "accessToken":process.env.TUF_ACCESS_TOKEN,
+      "spaceId":process.envTUF_SPACE_ID
     }
   }, "gatsby-plugin-image", "gatsby-plugin-sharp", "gatsby-transformer-sharp", "gatsby-plugin-postcss"]
 };
